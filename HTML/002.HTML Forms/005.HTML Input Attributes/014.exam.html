@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>The input list attibute</h1>
+
+    <p>The list attribute refers to a datalist element that contains pre-defined options for an input element.</p>
+
+    <form action="/action_page.php">
+        <input list="browsers" name="browser">
+        <datalist id="browsers">
+            <option value="Edge"></option>
+            <option value="Firefox"></option>
+            <option value="Chrome"></option>
+            <option value="Opera"></option>
+            <option value="Safari"></option>
+        </datalist>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
