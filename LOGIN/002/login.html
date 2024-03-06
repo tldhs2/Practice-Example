@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+        box-sizing:border-box;
+        color:white;
+    }
+    a:link{
+        list-style-type:none;
+    }
+    html, body{
+        height:100%;
+    }
+    body{
+        background-image:url("cosmos.jpg");
+    }
+
+    .container{
+        position:absolute;
+        top:40%;
+        left:50%;
+        transform:translate(-50%, -50%);
+        width:450px;
+        height:500px;
+        border:1px solid rgba(0, 0, 0, 0.2);
+        border-radius:50px;
+        background-color:rgba(250, 250, 250, 0.3);
+        text-align:center;
+        overflow:hidden;
+        margin:auto;
+        box-shadow:0 10px 10px 0 rgba(0, 0, 250, 0.5);
+        user-select:none;
+    }
+    .header{
+        background-color:rgba(200, 200, 200, 0.5);
+        height:70px;
+        color:white;
+        font-size:25px;
+        line-height:80px;
+        letter-spacing:2px;
+    }
+
+    #email, #pwd{
+        width:80%;
+        height:40px;
+        border:none;
+        border-bottom:1px solid black;
+        margin-top:50px;
+        font-size:18px;
+        background:none;
+    }
+    input::placeholder{
+        color:white;
+        opacity:.6;
+    }
+    .check{
+        width:80%;
+        height:50px;
+        margin:auto;
+        margin-top:40px;
+        margin-bottom:40px;
+        font-size:12px;
+        text-align:left;
+        color:rgba(256, 256, 256, 0.8);
+    }
+    .check a{
+        float:right;
+        font-style:italic;
+    }
+    #submit{
+        width:200px;
+        height:60px;
+        border:none;
+        border-radius:10px;
+        cursor:pointer;
+        color:white;
+        background-color:rgba(200, 200, 200, 0.5);
+        font-size:16px;
+        font-weight:bold;
+    }
+    #submit:hover{
+        transform:scale(1.05);
+    }
+</style>
+</head>
+<body>
+    <form action="">
+        <div class="container">
+            <div class="header">
+                CUSTOM LOGIN
+            </div>
+            <div>
+                <label for="id"><img src="icon1.png" alt="pencel" width="12px" height="12px" id="icon"></label>
+                <input type="text" placeholder="Email ID" id="email" name="id"></input>
+            </div>
+            <div>
+                <label for="pwd"><img src="icon1.png" alt="pencel" width="12px" height="12px" id="icon"></label>
+                <input type="password" placeholder="Password" id="pwd" name="pwd">
+            </div>
+            <div class="check">
+                <input type="checkbox" name="remember" style="cursor:pointer;">
+                <label for="remember">Remember me</label>
+                <a href="#">Forgot Password?</a>
+            </div>
+                <input type="submit" value="LOGIN" id="submit">
+        </div>
+    </form>
+</body>
+</html>

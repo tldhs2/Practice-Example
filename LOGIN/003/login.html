@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+        box-sizing:border-box;
+        color:white;
+    }
+    html, body{
+        height:100%;
+    }
+    a:link{
+        list-style-type:none;
+    }
+    body{
+        background-image:url("bg1.jpg");
+        background-repeat:no-repeat;
+        background-size:cover;
+    }
+    .warpper{
+        width:700px;
+        height:450px;
+        text-align:center;
+        padding:30px;
+        position:absolute;
+        top:15%;
+        left:55%;
+        border-radius:50px;
+        opacity:.8;
+        box-shadow:4px 8px 20px 0 rgba(0, 0, 0, 0.6);
+        transition:background-color 2s;
+
+        user-select:none;
+    }
+
+    .header{
+        font-size:30px;
+        width:80%;
+        height:90px;
+        margin:auto;
+        font-weight:bold;
+        color:floralwhite;
+    }
+
+    #email, #pwd{
+        width:80%;
+        height:50px;
+        background-color:rgba(255, 255, 255, 0.1);
+        border:none;
+        margin-top:10px;
+    }
+    input::placeholder{
+        color:white;
+        font-size:16px;
+    }
+    .check{
+        width:100%;
+        height:20px;
+        text-align:left;
+        margin-top:30px;
+        margin-left:30px;
+        font-size:14px;
+        color:white;
+    }
+    .found{
+        width:100%;
+        height:30px;
+        margin-bottom:50px;
+        text-align:right;
+        font-size:14px;
+        color:white;
+    }
+    #submit{
+        width:300px;
+        height:50px;
+        background-color:rgba(255, 255, 255, 0.1);
+        border:none;
+        border-radius:12px;
+        box-shadow:0 5px 5px 0 rgba(0, 0, 0, 0.6);
+        color:white;
+        font-size:16px;
+        font-weight:bold;
+        cursor:pointer;
+        
+    }
+
+    .warpper:hover{
+        background-color:rgba(0, 0, 0, 0.7);
+    }
+    #submit:hover{
+        transform:scale(1.01);
+    }
+</style>
+</head>
+<body>
+    <form action="">
+        <div class="warpper">
+            <div class="header">
+                custom login
+            </div>
+
+            <div class="id">
+                <input type="text" placeholder="ID" id="email">
+            </div>
+            <div class="pwd">
+                <input type="password" placeholder="PASSWORD" id="pwd">
+            </div>
+
+            <div class="check">
+                <input type="checkbox" name="remember" style="cursor:pointer;"><label for="remember">아이디 저장</label>
+            </div>
+            <div class="found">
+                <a href="#">아이디 / 비밀번호 찾기</a>&nbsp;
+                <a href="#">회원가입</a>
+            </div>
+
+            <input type="submit" value="로그인" id="submit">
+        </div>
+    </form>
+</body>
+</html>

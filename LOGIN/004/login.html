@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    * {
+        box-sizing:border-box;
+    }
+
+    html, body{
+        height:100%;
+    }
+    body{
+        background-image:url("bg3.jpg");
+        background-repeat:no-repeat;
+        background-size:cover;
+        overflow:hidden;
+    }
+    .warpper{
+        height:100%;
+    }
+    .container{
+        width:500px;
+        height:100%;
+        background:rgb(190, 155, 155);
+        position:absolute;
+        bottom:0;
+        right:0;
+        text-align:center;
+        border-radius:70px 0 0 70px;
+    }
+    .header{
+        width:80%;
+        margin:10px auto;
+        font-size:70px;
+        border-bottom:2px solid black;
+    }
+    .email, .pwd{
+        width:80%;
+        margin:auto;
+        margin-top:30px;
+    }
+    #email, #pwd{
+        width:80%;
+        height:40px;
+        margin:0 auto;
+    }
+    .check{
+        font-size:14px;
+        text-align:left;
+        margin:30px;
+    }
+    .join{
+        font-size:12px;
+        margin-top:40px;
+        margin-bottom:60px;
+    }
+    #submit{
+        width:50%;
+        height:40px;
+    }
+
+    .some{
+        width:80%;
+        height:400px;
+        border-top:2px solid black;
+        margin:50px;
+        font-weight:bold;
+    }
+
+</style>
+</head>
+<body>
+    <div class="warpper">
+        <div class="container">
+            <div class="header">
+                LOGIN
+            </div>
+    
+            <div class="email">
+                <input type="text" name="id" placeholder="아이디를 입력해주세요." id="email">
+            </div>
+            <div class="pwd">
+                <input type="password" name="pwd" placeholder="비밀번호를 입력해주세요." id="pwd">
+            </div>
+    
+            <div class="check">
+                <input type="checkbox" name="remember" style="cursor:pointer;"><label for="remember">아이디 기억하기</label>
+            </div>
+    
+            <div class="join">
+                <a href="#">아이디 찾기</a> |
+                <a href="#">비밀번호 찾기</a> |
+                <a href="#">회원가입</a>
+            </div>
+    
+            <input type="submit" id="submit" value="로그인">
+
+            <div class="some">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam suscipit laborum labore dolore fugiat fugit ex
+                    quaerat quae dolores molestias! Velit hic, ex quo maiores sapiente inventore molestias accusantium! Error. Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Nulla quibusdam dicta veritatis voluptates. Maiores deleniti non
+                    officiis consectetur praesentium eum incidunt dolor itaque dolorem perferendis. Dolorum fuga doloremque dolorem
+                    asperiores. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur animi accusamus labore deleniti,
+                    minima dolorem ipsum cum autem, suscipit asperiores dicta, ipsa incidunt rerum. Asperiores repellat minima ullam aut
+                    cupiditate. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit et tempora saepe? Reprehenderit
+                    mollitia fugiat, nulla quisquam adipisci quo aut commodi eum ad fugit, perferendis aliquid libero animi aspernatur
+                    amet?
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</body>
+</html>
