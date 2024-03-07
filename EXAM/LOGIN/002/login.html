@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
     *{
         box-sizing:border-box;
@@ -52,7 +53,11 @@
         margin-top:50px;
         font-size:18px;
         background:none;
+
     }
+    /* input:focus  {
+        outline: 0;
+    } */
     input::placeholder{
         color:white;
         opacity:.6;
@@ -94,11 +99,13 @@
                 CUSTOM LOGIN
             </div>
             <div>
-                <label for="id"><img src="icon1.png" alt="pencel" width="12px" height="12px" id="icon"></label>
+                <!-- <img src="icon1.png" alt="pencel" width="12px" height="12px" id="icon"> -->
+                <label for="id"><i class="fa fa-pencil" aria-hidden="true"></i></label>
                 <input type="text" placeholder="Email ID" id="email" name="id"></input>
             </div>
             <div>
-                <label for="pwd"><img src="icon1.png" alt="pencel" width="12px" height="12px" id="icon"></label>
+                <!-- <img src="icon1.png" alt="pencel" width="12px" height="12px" id="icon"> -->
+                <label for="pwd"><i class="fa fa-pencil" aria-hidden="true"></i></label>
                 <input type="password" placeholder="Password" id="pwd" name="pwd">
             </div>
             <div class="check">

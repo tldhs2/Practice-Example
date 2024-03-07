@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+        box-sizing:border-box;
+    }
+    body{
+        margin:0;
+        padding:0;
+    }
+    a:link{
+        text-decoration:none;
+        color:grey;
+    }
+    .container{
+        width:80%;
+        margin:20px auto;
+    }
+
+    .header{
+        height:200px;
+        border-bottom:5px dotted black;
+    }
+    .logo{
+        height:140px;
+        font-size:100px;
+        text-align:center;
+        border:5px dotted black;
+    }
+    .menu ul li{
+        list-style-type:none;
+        font-size:20px;
+        display:inline;
+    }
+
+
+    .content1, .content2{
+        height:500px;
+        border:1px solid black;
+        margin-top:50px;
+        display:flex;
+    }
+    .c1_1{
+        flex:45%;
+        height:100%;
+        text-align:center;
+        padding:100px;
+        font-size:30px;
+        border:1px solid black;
+
+    }
+    .c1_2{
+        flex:55%;
+        height:100%;
+        padding:30px;
+        font-size:20px;
+        border:1px solid black;
+    }
+
+    .c2_1{
+        flex:33.33%;
+        height:100%;
+        border:1px solid black;
+    }
+    .c2_2{
+        flex:33.33%;
+        height:100%;
+        border:1px solid black;
+    }
+    .c2_3{
+        flex:33.33%;
+        height:100%;
+        border:1px solid black;
+    }
+    img{
+        width:100%;
+        height:100%;
+    }
+
+
+    .footer{
+        width:100%;
+        height:150px;
+        font-size:50px;
+        font-weight:bold;
+        text-align:center;
+        border:1px solid black;
+        background-color:red;
+        margin-top:50px
+    }
+</style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="header">
+                <div class="logo">
+                    ART
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">HOME</a></li> | 
+                        <li><a href="#">OO</a></li> | 
+                        <li><a href="#">OO</a></li> | 
+                        <li><a href="#">OO</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content1">
+                <div class="c1_1">
+                    <h2>EXAM</h2>
+                </div>
+
+                <div class="c1_2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod quam beatae porro vitae, officiis cum commodi fugiat
+                        nesciunt quaerat. Quidem inventore corrupti ab commodi iure numquam vitae quibusdam! Adipisci, veniam!</p>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quidem nulla nam est, id delectus atque ipsum eius?
+                        Deserunt accusamus voluptatum, iusto consequuntur deleniti eius sunt itaque quas vitae tempora?</p>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod expedita a dicta beatae quisquam numquam laboriosam ex
+                        odit quos, alias aperiam minus sit tenetur, similique cum iusto unde deserunt perferendis.</p>
+                </div>
+            </div>
+
+            <div class="content2">
+                <div class="c2_1">
+                    <img src="art1.jpg" alt="1">
+                </div>
+
+                <div class="c2_2">
+                    <img src="art2.jpg" alt="2">
+                </div>
+
+                <div class="c2_3">
+                    <img src="art3.jpg" alt="3">
+                </div>
+            </div>
+
+        </div>
+            
+        <div class="footer">
+            <p>footer</p>
+        </div>
+    </div>
+</body>
+</html>
