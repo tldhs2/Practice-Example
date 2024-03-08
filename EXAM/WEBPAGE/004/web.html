@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    *{
+        box-sizing:border-box;
+    }
+    body{
+        margin:0;
+        padding:0;
+    }
+    ul li{
+        list-style-type:none;
+    }
+    a:link{
+        text-decoration:none;
+        color:black;
+        font-weight:bold;
+        font-size:24px;
+    }
+
+    div{
+        border:1px solid black;
+    }
+
+    .header{
+        height:100px;
+        display:flex;
+    }
+    .logo{
+        flex:5%;
+        text-align:left;
+        background-color:tomato;
+    }
+    .menu{
+        flex:95%;
+        text-align:right;
+        padding-right:50px;
+        background-color:yellow;
+    }
+    .menu ul li{
+        display:inline-block;
+        margin-right:20px;
+    }
+
+    .contentwrap{
+        display:flex;
+    }
+    .sidebar{
+        flex:15%;
+        height:1000px;
+        background-color:blueviolet;
+    }
+
+    .container{
+        width:85%;
+    }
+
+    .content1{
+        height:500px;
+        background-color:coral;
+    }
+    .content2{
+        height:500px;
+        background-color:cornflowerblue;
+    }
+
+    .footer{
+        height:200px;
+        background-color:aquamarine;
+    }
+</style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="logo">
+                <h1>LOGO</h1>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">1</a></li> | 
+                    <li><a href="#">2</a></li> | 
+                    <li><a href="#">3</a></li> |
+                    <li><a href="#">4</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="contentwrap">
+            <div class="sidebar">
+                <h1>SIDEBAR</h1>
+                <ul>
+                    <label for="#">abc</label>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                </ul>
+                <ul>
+                    <label for="#">abc</label>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                </ul>
+            </div>
+        
+            <div class="container">
+                <div class="content1">
+                    <h1>CONTENT1</h1>
+                </div>
+                <div class="content2">
+                    <h1>CONTENT2</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <h1>FOOTER</h1>
+        </div>
+    </div>
+</body>
+</html>

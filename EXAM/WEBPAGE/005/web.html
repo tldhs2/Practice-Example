@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body{
+        margin:0;
+        padding:0;
+        font-family:Arial, Helvetica, sans-serif;
+        box-sizing:border-box;
+    }
+    ul li{
+        list-style-type:none;
+    }
+    div{
+        /* border:1px solid black; */
+    }
+    .wrap{
+
+    }
+
+
+    .maincontainer{
+        width:1350px;
+        margin:0 auto;
+    }
+
+    .header{
+        display:flex;
+        width:1350px;
+        margin:0 auto;
+        position:fixed;
+        top: 0;
+        background-color:white;
+        border-bottom:2px solid lightgray;
+        z-index:99;
+    }
+    .logo{
+        flex:15%;
+        height:100px;
+        font-size:20px;
+    }
+    .search{
+        flex:70%;
+    }
+    .search input{
+        width:400px;
+        height:30px;
+        border-radius:20px;
+        margin-top:16px;
+    }
+    .login{
+        flex:15%;
+    }
+
+    .subcontainer{
+        display:flex;        
+        margin-top:100px;
+    }
+    .lside{
+        position:fixed;
+        width:190px;  
+        height:100vh;
+        border-top:2px solid lightgray;
+        border-right:2px solid lightgray;
+        z-index:99;
+    }
+    .lsm1{
+        font-size:24px;
+        line-height:40px;
+    }
+    .lsm2{
+        font-size:14px;
+    }
+    .container{
+        margin-left:15%;
+        flex:70%;
+    }
+    .content1, .content2, .content3{
+        height:500px;
+    }
+
+
+
+    .rside{
+        flex:30%;
+        border-left:2px solid lightgray;
+    }
+    .rslogin{
+        width:300px;
+        height:130px;
+        margin:30px auto;
+        border:2px solid lightgray;
+        border-radius:20px;
+        text-align:center;
+    }
+    .rslogin button{
+        width:240px;
+        height:50px;
+        margin-top:20px;
+        background-color:rgb(53, 194, 72);
+        border:none;
+        border-radius:8px;
+        color:white;
+        font-weight:;
+    }
+    .rslogin ul{
+        margin-left:-36px;
+    }
+    .rslogin ul li{
+        display:inline-block;
+        font-size:14px;
+    }
+    .rslogin ul li a{
+        color:gray;
+        text-decoration:none;
+    }
+    .rs1{
+        width:300px;
+        height:200px;
+        background-color:lightgray;
+        margin:30px auto;
+        border-radius:20px;
+        opacity:.3;
+    }
+    .rs2, .rs3{
+        width:300px;
+        height:50px;
+        background-color:lightgray;
+        margin:15px auto;
+        border-radius:20px;
+        opacity:.3;
+    }
+    .rs4{
+        width:300px;
+        height:320px;
+        margin:30px auto;
+        border:1px solid lightgray;
+        border-radius:20px;
+        opacity:.3;
+    }
+    .rs5{
+        width:300px;
+        height:80px;
+        background-color:lightgray;
+        margin:30px auto;
+        border-radius:20px;
+        opacity:.3;
+    }
+
+
+
+hr{
+    width:80%;
+}
+</style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="maincontainer">
+    
+            <div class="header">
+                <div class="logo">
+                    <p><b>NAVER</b> 카페</p>
+                </div>
+    
+                <div class="search">
+                    <input type="text">
+                </div>
+    
+                <div class="login">
+                    <div style="border:1px solid black; width:30px; height:30px; margin:30px auto;"></div>
+                </div>
+            </div>
+            <div class="subcontainer">
+                <div class="lside">
+                    <ul class="lsm1">
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">AAA</a></li>
+                        <li><a href="#">BBB</a></li>
+                        <li><a href="#">CCC</a></li>
+                        <li><a href="#">DDD</a></li>
+                        <li><a href="#">EEE</a></li>
+                    </ul>
+                    <hr>
+                    <ul class="lsm2">
+                        <li><a href="#">aaaaa</a></li>
+                        <li><a href="#">bbbbb</a></li>
+                        <li><a href="#">ccccc</a></li>
+                        <li><a href="#">ddddd</a></li>
+                        <li><a href="#">eeeee</a></li>
+                    </ul>
+
+                </div>
+    
+                <div class="container">
+                    <div class="content1">
+                        <h4>CONTENT1</h4>
+
+                    </div>
+
+                    <div class="content2">
+                        <h4>CONTENT2</h4>
+                    </div>
+
+                    <div class="content3">
+                        <h4>CONTENT3</h4>
+                    </div>
+                </div>
+    
+                <div class="rside">
+                    <div class="rslogin">
+                        <button><b>NAVER</b> 로그인</button>
+                        <ul>
+                            <li><a href="#">아이디 찾기</a></li> |
+                            <li><a href="#">비밀번호 찾기</a></li> |
+                            <li><a href="#">회원가입</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="rs1">
+
+                    </div>
+
+                    <div class="rs2">
+
+                    </div>
+
+                    <div class="rs3">
+
+                    </div>
+
+                    <div class="rs4">
+
+                    </div>
+
+                    <div class="rs5">
+
+                    </div>
+
+                </div>
+            </div>
+    
+        </div>
+    
+    </div>
+</body>
+</html>
